@@ -20,6 +20,7 @@
             <li><a href="#errores">Errores</a></li>
             <li><a href="#formulario">Formulario</a></li>
             <li><a href="#audioVideo">Audio y video</a></li>
+            <li><a href="#tablaHorarios">Tabla con Horarios de clase</a></li>
         </ul>
     </nav> <hr>
     <!-- Encabezados de diferentes tamaños -->
@@ -135,6 +136,7 @@
             <li>La tabla no tiene la etiqueta "thead" para el encabezado y tampoco la etiqueta "tbody" para el cuerpo.</li>
         </ol>
     </aside><hr>
+    <!-- Esto es un formulario con la mayoría de sus campos y selecciones -->
     <section id="formulario">
         <form action="">
             <fieldset>
@@ -174,12 +176,52 @@
             </fieldset>
         </form> 
     </section> <hr>
+    <!-- Implementación de videos y audios con sus controles localmente -->
     <section id="audioVideo">
+        <audio src="/musica/Amigo - Jose Larralde.mp3" controls title="Amigo - José Larralde"></audio>
         <p>Mi tema favorito de José Larralde:</p>
-        <audio src="/musica/Amigo - Jose Larralde.mp3" controls title="Amigo - José Larralde"></audio><br>
-        <p>Video parodia hecho en pandemia cuando los carpinchos invadieron Nordelta:</p>
         <video src="/videos/Carpinchos.mp4" controls title="Carpinchos" width="600px"></video>
-    </section> <hr>
+        <p>Video parodia hecho en pandemia cuando los carpinchos invadieron Nordelta:</p>
+    </section><hr>
+    <!-- Tabla de horarios con colspan y rawspan -->
+    <section id="tablaHorarios">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Horas</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>18:30</td>
+                    <td rowspan="5">Metodologías <br>de Pruebas <br> de Sistemas</td>
+                    <td rowspan="3">Metodologías <br>de Pruebas <br> de Sistemas</td>
+                    <td rowspan="3">FrontEnd</td>
+                    <td rowspan="5">Desarrollo para <br>Aplicaciones en <br>Dispositivos Móviles</td>
+                    <td rowspan="5">Desarrollo de Sistemas de <br>Informacion Orientados <br>a la Gestion y Apoyo <br>a las Decisiones</td>
+                </tr>
+                <tr>
+                    <td>19:30</td>
+                </tr>
+                <tr>
+                    <td>20:30</td>
+                </tr>
+                <tr>
+                    <td>21:30</td>
+                    <td rowspan="2">Tecnologias de la <br>Informacion y de <br>la Comunicacion</td>
+                    <td rowspan="2">Desarrollo para <br>Aplicaciones en <br>Dispositivos Móviles</td>
+                </tr>
+                <tr>
+                    <td>22:30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <footer><p>Página realizada por Rodrigo Nicolás Romero</p><a href="#inicio">Inicio</a></footer>
 </body>
 </html>
